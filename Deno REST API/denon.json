@@ -1,0 +1,23 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "hello": {
+      "cmd": "echo Hello World from denon.json",
+      "desc": "greet the world"
+    },
+    "start": {
+      "cmd": "deno run server.ts",
+      "allow": [
+        "env",
+        "net"
+      ],
+      "env": {
+        "PORT": "5000"
+      }
+    }
+  },
+  "logger": {
+    "debug": true
+  }
+}
+
